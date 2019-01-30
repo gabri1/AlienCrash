@@ -16,7 +16,7 @@ public class CheckpointController : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision) {
         if (collision.transform.CompareTag("Player"))
         {
-            deathZone.checkpoint = checkpoint;
+            deathZone.checkpoint = checkpoint.position;
         }
     }
 }

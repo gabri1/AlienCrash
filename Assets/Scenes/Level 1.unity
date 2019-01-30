@@ -479,8 +479,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1865887934}
   - component: {fileID: 1865887933}
+  - component: {fileID: 1865887935}
   m_Layer: 0
-  m_Name: LevelManager
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -498,7 +499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7694dfa05f5a5d4aaa98e1b1c381ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  map: {fileID: 2800000, guid: 18aa3e326e36b4d459682c9016596815, type: 3}
+  map: {fileID: 2800000, guid: f2b62f4273ed7034fad727ebf0b2e4d6, type: 3}
   parent: {fileID: 2017902863}
   Tiles:
   - color: {r: 0, g: 0, b: 0, a: 1}
@@ -521,6 +522,9 @@ MonoBehaviour:
   - color: {r: 0, g: 0.46666667, b: 0.46666667, a: 1}
     gameObject: {fileID: 6685952860670137654, guid: 3dde174ba7d9b1740a8cd856dd14d2fb,
       type: 3}
+  - color: {r: 0.6666667, g: 0.7411765, b: 0.07450981, a: 1}
+    gameObject: {fileID: 2903330689159455634, guid: ca6fff2efea77d943a5fe97367fedc3f,
+      type: 3}
 --- !u!4 &1865887934
 Transform:
   m_ObjectHideFlags: 0
@@ -535,6 +539,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1865887935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865887932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae9920ac6904644eaa69eca92eda93f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkpoint: {x: 0, y: 0, z: 0}
 --- !u!1 &2017902862
 GameObject:
   m_ObjectHideFlags: 0

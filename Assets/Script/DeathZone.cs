@@ -6,7 +6,7 @@ public class DeathZone : MonoBehaviour
 {
 
     public static DeathZone instance;
-    public Transform checkpoint;
+    public Vector3 checkpoint;
 
     // Start is called before the first frame update
     void Awake()
@@ -18,8 +18,13 @@ public class DeathZone : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        checkpoint = GameObject.FindGameObjectWithTag("Player").transform.position;
+    }
+
     public void Die(){
-        GameObject.Find("Player").transform.position = checkpoint.position;
+        GameObject.FindGameObjectWithTag("Player").transform.position = checkpoint;
     }
 
 }

@@ -24,6 +24,7 @@ public class DeathCollider : MonoBehaviour
     {
         if (collision.transform.CompareTag("Player"))
         {
+            deathZone.Die();
             Destroy(transform.gameObject);
         }
     }
