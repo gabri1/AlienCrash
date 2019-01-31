@@ -12,5 +12,4 @@ public class CameraFollow : MonoBehaviour
     {
         cinemachineVirtualCamera.Follow = GameObject.FindGameObjectWithTag("Player").transform;
     }
-
 }

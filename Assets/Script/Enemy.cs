@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
     public float speed = 10f;
     public Transform groundDetection;
     public CharacterController2D enemy;
-    [SerializeField] public float maxTime = 3;
+    public float maxTime = 5;
     private DeathZone deathZone;
     private float time = 0;
     private bool right = true;
@@ -37,7 +37,7 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-            time += Time.deltaTime;
+            time += Time.fixedDeltaTime;
         }
 
     }

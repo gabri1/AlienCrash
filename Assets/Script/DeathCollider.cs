@@ -25,7 +25,12 @@ public class DeathCollider : MonoBehaviour
         if (collision.transform.CompareTag("Player"))
         {
             deathZone.Die();
-            Destroy(transform.gameObject);
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(transform.position, transform.localScale);
     }
 }
