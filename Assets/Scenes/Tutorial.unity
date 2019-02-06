@@ -166,7 +166,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -290,7 +290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7694dfa05f5a5d4aaa98e1b1c381ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  map: {fileID: 2800000, guid: 3cac278ff03e3431c874aafd09fbb014, type: 3}
+  map: {fileID: 2800000, guid: 85c46f8baf70b420ab7389b093dd9ccb, type: 3}
   parent: {fileID: 1101109202}
   Tiles:
   - color: {r: 0, g: 0, b: 0, a: 1}
@@ -321,6 +321,18 @@ MonoBehaviour:
       type: 3}
   - color: {r: 0.25490198, g: 0.25490198, b: 0.25490198, a: 1}
     gameObject: {fileID: 1605357512560458146, guid: 6e178636173cb489d880eb91cd891acc,
+      type: 3}
+  - color: {r: 0.015686275, g: 0.25490198, b: 0.72156864, a: 1}
+    gameObject: {fileID: 4766398486921568206, guid: ddf4f4a030d22409d885d1eed7ec5f12,
+      type: 3}
+  - color: {r: 0, g: 0.27450982, b: 0.80784315, a: 1}
+    gameObject: {fileID: 4766398486921568206, guid: 65dd05d840bb94713b815f4d15fa2487,
+      type: 3}
+  - color: {r: 0, g: 0.29803923, b: 0.8745098, a: 1}
+    gameObject: {fileID: 4766398486921568206, guid: 7a21831cb6d5b469a8f68c0c86d75f0e,
+      type: 3}
+  - color: {r: 0, g: 0.3372549, b: 1, a: 1}
+    gameObject: {fileID: 4766398486921568206, guid: e1493b21c788d42b68f450955d71563c,
       type: 3}
 --- !u!4 &112613035
 Transform:
@@ -387,7 +399,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 10
+    OrthographicSize: 6
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
